@@ -1,0 +1,255 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* common styles */
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    width: 1050px;
+    padding: 30px;
+    margin-top: 21px;
+}
+/* Header */
+nav{
+    padding: 0 50px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+nav p{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+}
+nav a{
+    text-decoration: none;
+    color: #3A3A3A;
+    font-size: 24px;
+    margin-right: 20px;
+}
+/* Main part style */
+
+/* Intro Section */
+.divide{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+#influence{
+    width: 500px;
+    height: 270px;
+}
+#title-heading{
+    font-size: 50px;
+    margin-top: -10px;
+    margin-bottom: -7px;
+}
+#influence a{
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #E02C6D;
+    border-radius: 41px;
+    padding: 10px 24px;
+}
+#influence a:hover{
+    background-color: lightskyblue;
+    color: rgb(255, 255, 255);
+}
+.divide img{
+    width: 475px;
+    padding-left: 100px;
+    height: 475px;
+    transition: transform 5s;
+}
+.divide img:hover{
+    transform: rotate(30deg);
+}
+.fa-arrow-right{
+    padding-left: 10px;
+}
+
+/* Featured in */
+.logo{
+    width: 1050px;
+    height: 110px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* All Products */
+.title{
+    font-weight: 600;
+    font-size: 28px;
+    color: #3A3A3A;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.all-products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+}
+.collection{
+    width: 330px;
+    height: 476px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+.product-image img{
+    width: 300px;
+    height: 256px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5px;
+}
+.product-title{
+    font-weight: 500;
+    font-size: 28px;
+    color: #18191F;
+    padding-left: 15px;
+    margin-top: 16px;
+    margin-bottom: 0;
+}
+.price{
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.87);
+    margin-top: 6px;
+    padding-left: 15px;
+}
+.fa-star.filled{
+    color:#FFC014;
+}
+.fa-star-half-alt{
+    color:#FFC014;
+}
+.rating{
+    padding-left: 15px;
+}
+.about-product p{
+    padding-left: 15px;
+    margin-top: 5px;
+}
+.link-more a{
+    text-decoration: none;
+    color: #E02C6D;
+    float: right;
+    padding-right: 20px;
+    margin-top: 30px;
+}
+
+/* Blogs */
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+}
+.blog{
+    width: 330px;
+    height: 520px;
+    background: #f5e9e975;
+    border-radius: 5px;
+}
+.blog-image img{
+    width: 300px;
+    height: 256px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5px;
+}
+.blog-title{
+    font-weight: 500;
+    font-size: 24px;
+    padding-left: 15px;
+    margin-top: 16px;
+    margin-bottom: 0;
+    align-items: center;
+}
+.blog-sur{
+    padding-left: 15px;
+    margin-top: 5px;
+}
+.continue a{
+    text-decoration: none;
+    color: #E02C6D;
+    padding-left: 15px;
+}
+
+/* Footer */
+footer{
+        background-color: #0A0826;
+        color: white;
+        text-align: center;
+}
+footer h2{
+    font-weight: bold;
+    font-size: 24px;
+    padding-top: 50px;
+    margin-bottom: 0px;
+}
+footer p{
+    margin-top: 3px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #D9DBE1;
+}
+#social-media-icon{
+    margin-top: 17px;
+    font-size: 25px;
+    padding-bottom: 50px;
+    margin-bottom: 0px;
+}
+#social-media-icon a{
+    color: white;
+}
+
+/* Media Queries */
+@media only screen and (max-width:688px) {
+    .hidden{
+        display: none;
+    }
+    .container{
+        width: 100%;
+    }
+    .divide{
+        
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+    }
+    #influence h1{
+        font-size: 28px;
+    }
+    .divide{
+        flex-direction: column;
+    }
+    .divide img{
+        width: 257px;
+        height: 257px;
+    }
+}
+
+/* tablet devices */
+@media only screen and (min-width: 689px) and (max-width: 991px) {
+    .container{
+        width: 100%;
+    }
+    .players, .courses{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .blogs{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
